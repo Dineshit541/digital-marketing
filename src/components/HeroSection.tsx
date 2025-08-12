@@ -28,10 +28,10 @@ const HeroSection = () => {
           <div className="max-w-4xl">
             {/* Hero Headline - Top Left Positioned */}
             <div className="animate-fade-in-up">
-              <h1 className="hero-text text-6xl lg:text-8xl font-extralight leading-tight mb-8">
+              <h1 className="hero-title mb-8">
                 Where AI Meets
                 <br />
-                <span className="font-semibold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+                <span className="hero-gradient-text">
                   Digital Brilliance
                 </span>
               </h1>
@@ -44,12 +44,12 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 animate-scale-in">
-              <Button variant="glow" size="lg" className="group">
+              <Button variant="glow" size="lg" className="group button-text-white">
                 Start Your Journey
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
               
-              <Button variant="ghost-glow" size="lg" className="group">
+              <Button variant="ghost-glow" size="lg" className="group text-white hover:text-white">
                 <Play className="mr-2 w-5 h-5" />
                 Watch Our Story
               </Button>
@@ -58,16 +58,16 @@ const HeroSection = () => {
             {/* Floating stats */}
             <div className="mt-20 grid grid-cols-3 gap-8 max-w-2xl">
               <div className="text-center glass-card p-6 rounded-2xl floating-element">
-                <div className="text-3xl font-bold text-primary mb-2">300+</div>
-                <div className="text-sm text-muted-foreground font-light">Campaigns Delivered</div>
+                <div className="text-3xl stats-number mb-2">300+</div>
+                <div className="text-sm stats-label font-light">Campaigns Delivered</div>
               </div>
               <div className="text-center glass-card p-6 rounded-2xl floating-element" style={{ animationDelay: '1s' }}>
-                <div className="text-3xl font-bold text-accent mb-2">99%</div>
-                <div className="text-sm text-muted-foreground font-light">Client Satisfaction</div>
+                <div className="text-3xl stats-number mb-2">99%</div>
+                <div className="text-sm stats-label font-light">Client Satisfaction</div>
               </div>
               <div className="text-center glass-card p-6 rounded-2xl floating-element" style={{ animationDelay: '2s' }}>
-                <div className="text-3xl font-bold text-primary mb-2">10M+</div>
-                <div className="text-sm text-muted-foreground font-light">Global Reach</div>
+                <div className="text-3xl stats-number mb-2">10M+</div>
+                <div className="text-sm stats-label font-light">Global Reach</div>
               </div>
             </div>
           </div>
