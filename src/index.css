@@ -2,41 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Cinematic Digital Marketing Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark cinematic background */
+    --background: 220 27% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Glassmorphic cards */
+    --card: 220 27% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Floating elements */
+    --popover: 220 27% 15%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Accent glow primary */
+    --primary: 280 100% 70%;
+    --primary-foreground: 210 20% 95%;
+    --primary-glow: 280 100% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted secondary */
+    --secondary: 220 27% 18%;
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft muted tones */
+    --muted: 220 27% 15%;
+    --muted-foreground: 215 15% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors */
+    --accent: 200 100% 60%;
+    --accent-foreground: 210 20% 95%;
+    --accent-glow: 200 100% 75%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive states */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Subtle borders */
+    --border: 220 27% 20%;
+    --input: 220 27% 18%;
+    --ring: 280 100% 70%;
 
-    --radius: 0.5rem;
+    /* Premium radius */
+    --radius: 1rem;
+
+    /* Custom cinematic tokens */
+    --hero-overlay: 220 27% 8% / 0.4;
+    --glass-bg: 220 27% 12% / 0.1;
+    --glass-border: 210 20% 95% / 0.1;
+    --soft-glow: 280 100% 70% / 0.3;
+    --ambient-glow: 200 100% 60% / 0.2;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 70%), hsl(200 100% 60%));
+    --gradient-hero: linear-gradient(180deg, transparent 0%, hsl(var(--hero-overlay)) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(var(--glass-bg)), hsl(220 27% 15% / 0.05));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--soft-glow));
+    --shadow-ambient: 0 20px 60px -20px hsl(var(--ambient-glow));
+    --shadow-floating: 0 25px 50px -12px hsl(220 27% 8% / 0.8);
+    
+    /* Transitions */
+    --transition-cinematic: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-ambient: all 1.2s cubic-bezier(0.23, 1, 0.32, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +133,83 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans overflow-x-hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer components {
+  /* Glassmorphic containers */
+  .glass-card {
+    @apply backdrop-blur-xl border;
+    background: var(--gradient-glass);
+    border-color: hsl(var(--glass-border));
+    box-shadow: var(--shadow-floating);
+  }
+  
+  /* Floating elements */
+  .floating-element {
+    @apply transform;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Cinematic text styles */
+  .hero-text {
+    @apply text-foreground font-light tracking-tight;
+    text-shadow: 0 4px 20px hsl(var(--background) / 0.8);
+  }
+  
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .glow-ambient {
+    box-shadow: var(--shadow-ambient);
+  }
+}
+
+@layer utilities {
+  .transition-cinematic {
+    transition: var(--transition-cinematic);
+  }
+  
+  .transition-ambient {
+    transition: var(--transition-ambient);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
