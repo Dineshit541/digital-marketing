@@ -29,16 +29,16 @@ const HeroSection = () => {
             {/* Hero Headline - Top Left Positioned */}
             <div className="animate-fade-in-up">
               <h1 className="hero-text text-6xl lg:text-8xl font-extralight leading-tight mb-8">
-                Digital
+                Where AI Meets
                 <br />
                 <span className="font-semibold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                  Sanctuary
+                  Digital Brilliance
                 </span>
               </h1>
               
               <p className="hero-text text-xl lg:text-2xl font-light max-w-2xl mb-12 leading-relaxed">
-                Elevate your brand through cinematic storytelling, precision marketing, 
-                and digital artistry that transforms vision into reality.
+                Elevate your brand with AI-powered marketing strategies, cinematic storytelling, 
+                and precision campaigns that deliver measurable impact.
               </p>
             </div>
 
@@ -58,16 +58,16 @@ const HeroSection = () => {
             {/* Floating stats */}
             <div className="mt-20 grid grid-cols-3 gap-8 max-w-2xl">
               <div className="text-center glass-card p-6 rounded-2xl floating-element">
-                <div className="text-3xl font-bold text-primary mb-2">250+</div>
-                <div className="text-sm text-muted-foreground font-light">Campaigns</div>
+                <div className="text-3xl font-bold text-primary mb-2">300+</div>
+                <div className="text-sm text-muted-foreground font-light">Campaigns Delivered</div>
               </div>
               <div className="text-center glass-card p-6 rounded-2xl floating-element" style={{ animationDelay: '1s' }}>
-                <div className="text-3xl font-bold text-accent mb-2">98%</div>
-                <div className="text-sm text-muted-foreground font-light">Success Rate</div>
+                <div className="text-3xl font-bold text-accent mb-2">99%</div>
+                <div className="text-sm text-muted-foreground font-light">Client Satisfaction</div>
               </div>
               <div className="text-center glass-card p-6 rounded-2xl floating-element" style={{ animationDelay: '2s' }}>
-                <div className="text-3xl font-bold text-primary mb-2">5M+</div>
-                <div className="text-sm text-muted-foreground font-light">Reach</div>
+                <div className="text-3xl font-bold text-primary mb-2">10M+</div>
+                <div className="text-sm text-muted-foreground font-light">Global Reach</div>
               </div>
             </div>
           </div>
