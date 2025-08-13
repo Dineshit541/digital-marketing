@@ -31,12 +31,18 @@ const services = [
     title: "Creative Storytelling",
     description: "Cinematic brand visuals that connect and convert.",
     features: ["Video Production", "Brand Storytelling", "Visual Design"]
+  },
+  {
+    icon: Code,
+    title: "Website Development",
+    description: "Modern, responsive websites built with cutting-edge technology and AI optimization.",
+    features: ["Responsive Design", "Performance Optimization", "SEO Integration"]
   }
 ];
 
 const ServicesSection = () => {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section id="services" className="py-32 relative overflow-hidden">
       {/* Ambient background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl floating-element" />

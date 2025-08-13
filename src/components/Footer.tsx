@@ -32,6 +32,7 @@ const Footer = () => {
               <li className="hover:text-foreground transition-colors cursor-pointer">Social Media Automation</li>
               <li className="hover:text-foreground transition-colors cursor-pointer">Conversion Funnel AI</li>
               <li className="hover:text-foreground transition-colors cursor-pointer">Creative Storytelling</li>
+              <li className="hover:text-foreground transition-colors cursor-pointer">Website Development</li>
             </ul>
           </div>
 
@@ -41,15 +42,15 @@ const Footer = () => {
             <div className="space-y-4 text-muted-foreground">
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-3 text-primary" />
-                hello@agencore.ai
+                dineshit541@gmail.com
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-3 text-primary" />
-                +1 (555) 123-4567
+                +91 8344031800
               </div>
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-3 text-primary" />
-                Creative District, NYC
+                Chennai, Tamil Nadu
               </div>
             </div>
           </div>
@@ -58,7 +59,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 AGENCORE. Engineered with AI precision.
+            © 2025 AGENCORE. Engineered with AI precision.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
