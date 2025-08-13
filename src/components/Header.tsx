@@ -17,7 +17,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Navigation - Left */}
+          {/* Logo - Left */}
+          <div className="text-white font-bold text-2xl gradient-text">
+            AGENCORE
+          </div>
+
+          {/* Navigation - Right */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <a
@@ -37,11 +42,6 @@ const Header = () => {
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-
-          {/* Logo - Right */}
-          <div className="text-white font-bold text-2xl gradient-text">
-            AGENCORE
-          </div>
         </div>
 
         {/* Mobile menu */}
