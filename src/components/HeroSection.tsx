@@ -23,7 +23,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen flex flex-col justify-center">
+      <div className="relative z-10 min-h-screen flex flex-col justify-center pt-16">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl">
             {/* Hero Headline - Top Left Positioned */}
