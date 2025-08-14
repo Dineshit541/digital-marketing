@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, ArrowRight, TrendingUp, Users, Target } from "lucide-react";
+import healthcareImage from "@/assets/healthcare-digital.jpg";
 
 const Portfolio = () => {
   const projects = [
@@ -24,7 +25,7 @@ const Portfolio = () => {
     {
       title: "Healthcare Digital Transformation",
       description: "Comprehensive digital marketing strategy for a healthcare provider reaching 1M+ patients",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: healthcareImage,
       category: "Healthcare",
       technologies: ["Content Marketing", "SEO", "Social Media"],
       results: [
