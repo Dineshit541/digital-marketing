@@ -74,12 +74,12 @@ const About = () => {
                   <div className="text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold gradient-text mb-2">300+</div>
+                  <div className="text-4xl font-bold gradient-text mb-2">20+</div>
                   <div className="text-muted-foreground">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold gradient-text mb-2">50+</div>
-                  <div className="text-muted-foreground">Happy Clients</div>
+                  <div className="text-4xl font-bold gradient-text mb-2">10x</div>
+                  <div className="text-muted-foreground">ROI Delivered</div>
                 </div>
               </div>
             </div>

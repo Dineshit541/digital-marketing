@@ -3,10 +3,13 @@ import { ArrowRight, Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen w-full bg-background">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-primary/5" />
-      <div className="absolute inset-0 gradient-hero" />
+    <section id="home" className="relative min-h-screen w-full overflow-hidden">
+      {/* Dark Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
+      
+      {/* Glassmorphism Overlay */}
+      <div className="absolute inset-0 backdrop-blur-sm bg-black/10" />
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col justify-center pt-16">
@@ -43,17 +46,17 @@ const HeroSection = () => {
 
             {/* Floating stats */}
             <div className="mt-20 grid grid-cols-3 gap-8 max-w-2xl">
-              <div className="text-center glass-card p-6 rounded-2xl floating-element">
+              <div className="text-center backdrop-blur-xl bg-white/5 border border-white/10 p-6 rounded-2xl floating-element shadow-2xl">
                 <div className="text-3xl stats-number mb-2">20+</div>
                 <div className="text-sm stats-label font-light">Projects Completed</div>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl floating-element" style={{ animationDelay: '1s' }}>
+              <div className="text-center backdrop-blur-xl bg-white/5 border border-white/10 p-6 rounded-2xl floating-element shadow-2xl" style={{ animationDelay: '1s' }}>
                 <div className="text-3xl stats-number mb-2">99%</div>
                 <div className="text-sm stats-label font-light">Client Satisfaction</div>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl floating-element" style={{ animationDelay: '2s' }}>
-                <div className="text-3xl stats-number mb-2">10M+</div>
-                <div className="text-sm stats-label font-light">Global Reach</div>
+              <div className="text-center glass-card p-6 rounded-2xl floating-element backdrop-blur-xl bg-white/5 border border-white/10" style={{ animationDelay: '2s' }}>
+                <div className="text-3xl stats-number mb-2">10x</div>
+                <div className="text-sm stats-label font-light">ROI Delivered</div>
               </div>
             </div>
           </div>
