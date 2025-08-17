@@ -120,17 +120,17 @@ const Portfolio = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center glass-card p-8 rounded-3xl">
+              <Target className="w-12 h-12 text-primary mx-auto mb-4" />
+              <div className="text-4xl font-bold gradient-text mb-2">20+</div>
+              <div className="text-muted-foreground">Projects Completed</div>
+            </div>
+            <div className="text-center glass-card p-8 rounded-3xl">
               <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
-              <div className="text-4xl font-bold gradient-text mb-2">300+</div>
-              <div className="text-muted-foreground">Successful Campaigns</div>
+              <div className="text-4xl font-bold gradient-text mb-2">10x</div>
+              <div className="text-muted-foreground">ROI Delivered</div>
             </div>
             <div className="text-center glass-card p-8 rounded-3xl">
               <Users className="w-12 h-12 text-primary mx-auto mb-4" />
-              <div className="text-4xl font-bold gradient-text mb-2">50+</div>
-              <div className="text-muted-foreground">Happy Clients</div>
-            </div>
-            <div className="text-center glass-card p-8 rounded-3xl">
-              <Target className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold gradient-text mb-2">10M+</div>
               <div className="text-muted-foreground">People Reached</div>
             </div>

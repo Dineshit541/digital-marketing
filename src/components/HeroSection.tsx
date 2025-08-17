@@ -3,24 +3,10 @@ import { ArrowRight, Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source
-            src="https://cdn.midjourney.com/video/1b8765f8-a8b0-4e6a-9224-5d25998e152e/0.mp4"
-            type="video/mp4"
-          />
-        </video>
-        {/* Cinematic overlay */}
-        <div className="absolute inset-0 gradient-hero" />
-      </div>
+    <section id="home" className="relative min-h-screen w-full bg-background">
+      {/* Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-primary/5" />
+      <div className="absolute inset-0 gradient-hero" />
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col justify-center pt-16">
@@ -58,8 +44,8 @@ const HeroSection = () => {
             {/* Floating stats */}
             <div className="mt-20 grid grid-cols-3 gap-8 max-w-2xl">
               <div className="text-center glass-card p-6 rounded-2xl floating-element">
-                <div className="text-3xl stats-number mb-2">300+</div>
-                <div className="text-sm stats-label font-light">Campaigns Delivered</div>
+                <div className="text-3xl stats-number mb-2">20+</div>
+                <div className="text-sm stats-label font-light">Projects Completed</div>
               </div>
               <div className="text-center glass-card p-6 rounded-2xl floating-element" style={{ animationDelay: '1s' }}>
                 <div className="text-3xl stats-number mb-2">99%</div>
