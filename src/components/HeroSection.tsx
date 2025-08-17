@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import starryBackground from "@/assets/starry-background.png";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
-      {/* Dark Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+      {/* Starry Space Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${starryBackground})` }}
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
       
       {/* Glassmorphism Overlay */}
