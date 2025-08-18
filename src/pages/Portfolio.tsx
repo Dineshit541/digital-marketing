@@ -6,233 +6,166 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink, ArrowRight, TrendingUp, Users, Target, Calendar, DollarSign, BarChart3, Lightbulb } from "lucide-react";
-import healthcareImage from "@/assets/healthcare-digital.jpg";
 
 const Portfolio = () => {
   const projects = [
     {
-      title: "E-Commerce AI Revolution",
-      description: "AI-powered product recommendation system that increased conversion rates by 300%",
+      title: "AI-Powered E-Commerce Growth Strategy",
+      description: "Designed and implemented a high-conversion, SEO-optimized e-commerce website for an Indian fashion retailer, leading to 4X growth in sales.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       category: "E-Commerce",
-      technologies: ["AI/ML", "Personalization", "Analytics"],
+      technologies: ["AI Product Recommendations", "SEO Optimization", "WhatsApp Automation", "UPI Integration"],
       results: [
-        { label: "Conversion Rate", value: "+300%" },
-        { label: "Revenue Growth", value: "+250%" },
-        { label: "Customer Retention", value: "+180%" }
+        { label: "Conversion Rate", value: "+280%" },
+        { label: "Organic Traffic", value: "+350%" },
+        { label: "Cart Abandonment", value: "70% → 35%" }
       ],
-      client: "Fashion Retailer",
-      duration: "6 months",
+      client: "Indian Fashion Retailer",
+      duration: "5 months",
       caseStudy: {
-        challenge: "Our client, a leading fashion retailer, was struggling with low conversion rates and high cart abandonment. Despite having a large product catalog, customers were overwhelmed and couldn't find relevant products easily. The existing recommendation system was basic and didn't adapt to user behavior.",
-        solution: "We implemented a comprehensive AI-powered recommendation engine that analyzed user behavior, purchase history, browsing patterns, and even seasonal trends. The system included personalized product suggestions, smart search functionality, and dynamic pricing strategies.",
+        challenge: "Client had a non-responsive, outdated site with low organic traffic (less than 1K/month) and high cart abandonment rate (70%+). They were struggling to compete in the growing Indian e-commerce market.",
+        solution: "We built a modern, mobile-first website with integrated AI product recommendations, optimized SEO for 'ethnic wear online India' and other high-volume keywords, added WhatsApp automation for abandoned cart recovery, and integrated UPI & wallet payments for Indian buyers.",
         implementation: [
-          "Deployed machine learning algorithms for real-time personalization",
-          "Integrated behavioral tracking across all touchpoints",
-          "Created A/B testing framework for continuous optimization",
-          "Implemented predictive analytics for inventory management"
+          "Built responsive, mobile-first website design",
+          "Implemented AI-powered product recommendation engine",
+          "Optimized for high-volume Indian fashion keywords",
+          "Integrated WhatsApp Business API for cart recovery",
+          "Added UPI, wallets, and COD payment options",
+          "Set up analytics and conversion tracking"
         ],
         results: [
-          "Conversion rates increased from 2.3% to 9.2%",
-          "Average order value grew by 150%",
-          "Cart abandonment reduced by 45%",
-          "Customer lifetime value increased by 200%"
+          "+280% increase in conversion rate",
+          "+350% organic traffic growth within 6 months",
+          "Cart abandonment reduced from 70% → 35%",
+          "Monthly revenue crossed ₹35 Lakhs",
+          "Improved mobile user experience by 90%",
+          "Reduced page load time by 60%"
         ],
-        testimonial: "The AI recommendation system completely transformed our business. We're now seeing conversion rates we never thought possible, and our customers are finding exactly what they want.",
+        testimonial: "The new website completely transformed our business. We're now getting orders from all over India, and our customers love the smooth shopping experience. The AI recommendations have increased our average order value significantly.",
         keyMetrics: [
-          { label: "Revenue Impact", value: "$2.5M increase" },
-          { label: "ROI", value: "850%" },
-          { label: "Implementation Time", value: "4 months" }
+          { label: "Revenue Impact", value: "₹2.5 Cr (6 months)" },
+          { label: "ROI", value: "720%" },
+          { label: "Implementation Time", value: "5 months" }
         ]
       }
     },
     {
-      title: "Healthcare Digital Transformation",
-      description: "Comprehensive digital marketing strategy for a healthcare provider reaching 1M+ patients",
-      image: healthcareImage,
-      category: "Healthcare",
-      technologies: ["Content Marketing", "SEO", "Social Media"],
-      results: [
-        { label: "Patient Reach", value: "1M+" },
-        { label: "Appointment Bookings", value: "+400%" },
-        { label: "Brand Awareness", value: "+500%" }
-      ],
-      client: "Multi-Specialty Hospital",
-      duration: "12 months",
-      caseStudy: {
-        challenge: "A multi-specialty hospital needed to increase patient acquisition and establish itself as a trusted healthcare provider in Chennai. They had minimal online presence and were losing patients to competitors with stronger digital marketing strategies.",
-        solution: "We developed a comprehensive digital transformation strategy focusing on content marketing, local SEO, patient education, and community engagement. The approach emphasized trust-building and providing valuable health information to potential patients.",
-        implementation: [
-          "Created 200+ educational health articles and videos",
-          "Optimized for local search with 'near me' keywords",
-          "Launched targeted social media campaigns for different specialties",
-          "Implemented online appointment booking system",
-          "Developed patient testimonial and success story campaigns"
-        ],
-        results: [
-          "Reached over 1 million potential patients",
-          "Online appointment bookings increased by 400%",
-          "Website traffic grew by 600%",
-          "Brand awareness surveys showed 500% improvement",
-          "Patient satisfaction scores increased to 4.8/5"
-        ],
-        testimonial: "Our digital presence has completely transformed. We're now the go-to healthcare provider in Chennai, and patients trust us because of the valuable content we share.",
-        keyMetrics: [
-          { label: "New Patients", value: "15,000+" },
-          { label: "Digital ROI", value: "450%" },
-          { label: "Online Reviews", value: "4.8★ average" }
-        ]
-      }
-    },
-    {
-      title: "FinTech App Launch Campaign",
-      description: "Multi-channel campaign for a revolutionary fintech app that acquired 100K users in 90 days",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      category: "FinTech",
-      technologies: ["Mobile Marketing", "Influencer Partnerships", "Performance Ads"],
-      results: [
-        { label: "User Acquisition", value: "100K+" },
-        { label: "App Downloads", value: "500K+" },
-        { label: "Cost Per Acquisition", value: "-60%" }
-      ],
-      client: "Payment Solutions Startup",
-      duration: "3 months",
-      caseStudy: {
-        challenge: "A new fintech startup needed to launch their payment app in a highly competitive market. They faced challenges including lack of brand recognition, high customer acquisition costs, and skepticism about security in digital payments.",
-        solution: "We created a multi-channel launch campaign focusing on trust-building, influencer partnerships, and performance-driven advertising. The strategy emphasized security, convenience, and exclusive launch benefits.",
-        implementation: [
-          "Partnered with 50+ financial influencers and tech reviewers",
-          "Created educational content about digital payment security",
-          "Launched targeted campaigns across Google, Facebook, and LinkedIn",
-          "Implemented referral program with gamification elements",
-          "Developed PR strategy with major tech publications"
-        ],
-        results: [
-          "Acquired 100,000+ active users in first 90 days",
-          "Achieved 500,000+ app downloads",
-          "Reduced customer acquisition cost by 60%",
-          "Achieved 4.6-star rating on app stores",
-          "Generated $10M in transaction volume"
-        ],
-        testimonial: "The launch campaign exceeded all our expectations. We not only hit our user acquisition targets but also built a strong foundation of trust with our customers.",
-        keyMetrics: [
-          { label: "Market Share", value: "8% in segment" },
-          { label: "User Retention", value: "75% after 30 days" },
-          { label: "Campaign ROI", value: "320%" }
-        ]
-      }
-    },
-    {
-      title: "Real Estate Digital Showcase",
-      description: "Virtual reality marketing campaign that sold 85% of premium properties before construction",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      category: "Real Estate",
-      technologies: ["VR/AR", "3D Visualization", "Digital Tours"],
-      results: [
-        { label: "Pre-Sales", value: "85%" },
-        { label: "Virtual Tours", value: "10K+" },
-        { label: "Lead Quality", value: "+400%" }
-      ],
-      client: "Luxury Developer",
-      duration: "8 months",
-      caseStudy: {
-        challenge: "A luxury real estate developer needed to pre-sell premium apartments before construction completion. Traditional marketing methods weren't effective for high-value properties, and buyers wanted to experience the space before committing.",
-        solution: "We created immersive VR experiences and 3D virtual tours that allowed potential buyers to walk through their future homes. Combined with targeted digital marketing to high-net-worth individuals.",
-        implementation: [
-          "Developed photorealistic VR tours for each apartment type",
-          "Created interactive floor plans with customization options",
-          "Launched targeted campaigns on luxury lifestyle platforms",
-          "Set up VR experience centers in prime locations",
-          "Implemented CRM system for lead nurturing"
-        ],
-        results: [
-          "Sold 85% of units before construction completion",
-          "Conducted 10,000+ virtual tours",
-          "Lead quality improved by 400%",
-          "Average time to sale reduced by 50%",
-          "Customer satisfaction rate of 96%"
-        ],
-        testimonial: "The VR experience was a game-changer. Customers could truly envision their future home, which made the buying decision much easier.",
-        keyMetrics: [
-          { label: "Sales Value", value: "₹150 Crores" },
-          { label: "Time to Sale", value: "3 months avg" },
-          { label: "Marketing ROI", value: "600%" }
-        ]
-      }
-    },
-    {
-      title: "Restaurant Chain Expansion",
-      description: "Location-based marketing strategy that tripled foot traffic and expanded to 15 new cities",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      category: "Food & Beverage",
-      technologies: ["Location Marketing", "Social Campaigns", "Loyalty Programs"],
-      results: [
-        { label: "Foot Traffic", value: "+300%" },
-        { label: "New Locations", value: "15" },
-        { label: "Customer Loyalty", value: "+250%" }
-      ],
-      client: "Restaurant Chain",
-      duration: "18 months",
-      caseStudy: {
-        challenge: "A regional restaurant chain wanted to expand nationally but struggled with brand awareness in new markets. They needed to drive foot traffic to existing locations while building excitement for new openings.",
-        solution: "We implemented a location-based marketing strategy combined with social media campaigns and a comprehensive loyalty program. The approach focused on local community engagement and food influencer partnerships.",
-        implementation: [
-          "Launched hyper-local social media campaigns for each location",
-          "Created location-specific menus and promotions",
-          "Developed mobile app with loyalty rewards and geo-targeting",
-          "Partnered with local food bloggers and influencers",
-          "Implemented data-driven site selection for new locations"
-        ],
-        results: [
-          "Foot traffic increased by 300% across all locations",
-          "Successfully expanded to 15 new cities",
-          "Customer loyalty program reached 100,000+ members",
-          "Average order value increased by 45%",
-          "Brand recognition improved by 400% in new markets"
-        ],
-        testimonial: "Our expansion was incredibly successful thanks to the targeted marketing approach. Each new location felt like a local favorite from day one.",
-        keyMetrics: [
-          { label: "Revenue Growth", value: "₹50 Crores" },
-          { label: "Market Penetration", value: "15 new cities" },
-          { label: "Customer Retention", value: "80%" }
-        ]
-      }
-    },
-    {
-      title: "Educational Platform Growth",
-      description: "Content-driven strategy that grew an online learning platform to 500K active users",
+      title: "Scaling Student Enrollment with AI + Digital Marketing",
+      description: "Helped a local spoken English academy in Tamil Nadu reach more students online and scale beyond word-of-mouth leads.",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       category: "Education",
-      technologies: ["Content Strategy", "Community Building", "Webinar Marketing"],
+      technologies: ["Meta Ads", "Google Ads", "Content Strategy", "Student Portal"],
       results: [
-        { label: "Active Users", value: "500K+" },
-        { label: "Course Completions", value: "+600%" },
-        { label: "Revenue Growth", value: "+800%" }
+        { label: "Student Growth", value: "80 → 450" },
+        { label: "Revenue Growth", value: "₹2L → ₹11L" },
+        { label: "Dropout Reduction", value: "-40%" }
       ],
-      client: "EdTech Platform",
-      duration: "15 months",
+      client: "Spoken English Academy",
+      duration: "6 months",
       caseStudy: {
-        challenge: "An online learning platform was struggling with low user engagement and high drop-off rates. Despite having quality content, they couldn't retain learners or build a strong community around their courses.",
-        solution: "We developed a comprehensive content marketing and community building strategy that focused on learner success stories, interactive content, and peer-to-peer learning experiences.",
+        challenge: "A local spoken English academy in Tamil Nadu had offline-only promotions with limited reach, students dropping out after 1–2 months, and strong competition from online apps.",
+        solution: "We launched Meta & Google Ads targeting 'English speaking classes near me', created landing pages with demo booking automation, built a content strategy (Instagram reels + YouTube shorts), and introduced student progress tracking portal with gamification.",
         implementation: [
-          "Created weekly educational webinars with industry experts",
-          "Launched peer learning groups and study circles",
-          "Developed gamification system with badges and leaderboards",
-          "Implemented email nurturing sequences for course completion",
-          "Created success story campaigns featuring alumni"
+          "Set up targeted Google and Meta ad campaigns",
+          "Created high-converting landing pages with demo booking",
+          "Developed Instagram reels and YouTube shorts strategy",
+          "Built student progress tracking portal",
+          "Implemented gamification for better retention",
+          "Created automated follow-up sequences"
         ],
         results: [
-          "Grew to 500,000+ active users",
-          "Course completion rates increased by 600%",
-          "Revenue grew by 800% year-over-year",
-          "Community engagement increased by 400%",
-          "Net Promoter Score improved to 72"
+          "Student enrollment grew from 80 → 450 in 9 months",
+          "Dropout rate reduced by 40%",
+          "3X increase in demo class bookings",
+          "Monthly revenue grew from ₹2 Lakhs → ₹11 Lakhs",
+          "Built strong social media presence with 25K+ followers",
+          "Achieved 4.8-star Google rating"
         ],
-        testimonial: "The community aspect transformed our platform. Students are now learning from each other and staying engaged throughout their entire learning journey.",
+        testimonial: "We never imagined we could grow this fast! The digital marketing strategy brought us students from across Tamil Nadu, and the student portal has made our teaching much more effective.",
         keyMetrics: [
-          { label: "Course Completions", value: "2.5M+" },
-          { label: "Community Members", value: "300K+" },
-          { label: "Revenue Impact", value: "₹25 Crores" }
+          { label: "Students Enrolled", value: "450+" },
+          { label: "ROI", value: "850%" },
+          { label: "Implementation Time", value: "6 months" }
+        ]
+      }
+    },
+    {
+      title: "10X Qualified Leads for Real Estate Developer",
+      description: "Generated massive qualified homebuyer leads for a real estate firm in Coimbatore with virtual tours and AI-driven campaigns.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      category: "Real Estate",
+      technologies: ["Virtual Tours", "AI-driven Google Ads", "CRM Automation", "SEO Content"],
+      results: [
+        { label: "Qualified Leads", value: "2,000+" },
+        { label: "Cost per Lead", value: "-65%" },
+        { label: "Sales Pipeline", value: "₹40+ Cr" }
+      ],
+      client: "Real Estate Developer",
+      duration: "4 months",
+      caseStudy: {
+        challenge: "A real estate firm in Coimbatore had weak online presence, no proper lead funnel, high ad spend but low-quality leads, and competitors dominating Google searches.",
+        solution: "We built a real estate lead-gen website with virtual tours & WhatsApp CTA, ran AI-driven Google Ads targeting 'flats for sale in Coimbatore', automated CRM follow-ups via SMS/WhatsApp, and published SEO blog content around home loans, property tax, RERA, etc.",
+        implementation: [
+          "Built lead-generation website with virtual property tours",
+          "Implemented WhatsApp CTA buttons throughout the site",
+          "Set up AI-driven Google Ads campaigns",
+          "Created automated CRM with SMS/WhatsApp follow-ups",
+          "Developed SEO content strategy for real estate keywords",
+          "Integrated lead scoring and qualification system"
+        ],
+        results: [
+          "2,000+ verified leads in 4 months",
+          "Cost-per-lead reduced by 65%",
+          "50+ site visits scheduled every month",
+          "₹40+ Crore sales pipeline generated",
+          "Increased website traffic by 500%",
+          "Achieved 95% lead response rate within 1 hour"
+        ],
+        testimonial: "The lead quality has improved dramatically. We're now getting serious buyers who are ready to visit our projects, and the virtual tours have made our sales process much more efficient.",
+        keyMetrics: [
+          { label: "Leads Generated", value: "2,000+" },
+          { label: "Sales Pipeline", value: "₹40 Cr" },
+          { label: "ROI", value: "450%" }
+        ]
+      }
+    },
+    {
+      title: "Personal Branding & Coaching Funnel for Life Coach",
+      description: "Helped a Bangalore-based life coach scale beyond 1:1 sessions and sell group coaching programs online with personal branding.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      category: "Personal Development",
+      technologies: ["Personal Branding", "Instagram Strategy", "Meta Ads Funnel", "Email Automation"],
+      results: [
+        { label: "Instagram Growth", value: "0 → 35K" },
+        { label: "Webinar Signups", value: "1,200+" },
+        { label: "Revenue Generated", value: "₹25 Lakhs" }
+      ],
+      client: "Life Coach",
+      duration: "4 months",
+      caseStudy: {
+        challenge: "A Bangalore-based life coach had no brand visibility online, was struggling to attract high-ticket clients, and sessions were limited to word-of-mouth referrals.",
+        solution: "We built a personal brand website with booking system + testimonials, created Instagram content strategy (quotes, reels, success stories), launched Meta Ads funnel: Free webinar → Paid course, and automated email nurturing system with AI copywriting.",
+        implementation: [
+          "Designed personal brand website with integrated booking system",
+          "Created comprehensive Instagram content calendar",
+          "Developed high-converting webinar funnel",
+          "Set up automated email nurturing sequences",
+          "Implemented Meta Ads campaigns for webinar promotion",
+          "Created client testimonial and success story campaigns"
+        ],
+        results: [
+          "Grew from 0 → 35K Instagram followers in 6 months",
+          "Generated 1,200+ webinar sign-ups",
+          "Converted 10% into paid coaching clients",
+          "₹25 Lakhs revenue in 6 months",
+          "Built email list of 5,000+ subscribers",
+          "Achieved 4.9-star client satisfaction rating"
+        ],
+        testimonial: "The personal branding strategy completely transformed my coaching business. I'm now attracting clients from across India, and my group programs are always full. The automated systems have given me my time back.",
+        keyMetrics: [
+          { label: "Revenue Impact", value: "₹25 Lakhs" },
+          { label: "ROI", value: "12X" },
+          { label: "Implementation Time", value: "4 months" }
         ]
       }
     }
