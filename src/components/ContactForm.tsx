@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, memo, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 
-const ContactForm = () => {
+const ContactForm = memo(() => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -14,21 +14,21 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
       description: "We'll get back to you within 24 hours.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
-  };
+  }, [toast]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
-  };
+  }, []);
 
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-background to-background/50">
@@ -142,6 +142,8 @@ const ContactForm = () => {
       </div>
     </section>
   );
-};
+});
+
+ContactForm.displayName = 'ContactForm';
 
 export default ContactForm;

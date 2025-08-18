@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Search, Target, Pen, Code, TrendingUp, Bot } from "lucide-react";
+import { memo, useMemo } from "react";
 
 const services = [
   {
@@ -40,7 +41,9 @@ const services = [
   }
 ];
 
-const ServicesSection = () => {
+const ServicesSection = memo(() => {
+  const memoizedServices = useMemo(() => services, []);
+  
   return (
     <section id="services" className="py-32 relative overflow-hidden">
       {/* Ambient background elements */}
@@ -65,7 +68,7 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => (
+          {memoizedServices.map((service, index) => (
             <div
               key={service.title}
               className="glass-card p-8 rounded-3xl group hover:glow-ambient transition-ambient animate-scale-in"
@@ -112,6 +115,8 @@ const ServicesSection = () => {
       </div>
     </section>
   );
-};
+});
+
+ServicesSection.displayName = 'ServicesSection';
 
 export default ServicesSection;

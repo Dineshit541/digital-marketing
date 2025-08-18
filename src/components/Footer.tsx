@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { memo } from "react";
 
-const Footer = () => {
+const Footer = memo(() => {
   return (
     <footer className="py-20 border-t border-border/50">
       <div className="container mx-auto px-6 lg:px-8">
@@ -76,6 +77,8 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = 'Footer';
 
 export default Footer;

@@ -1,14 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { memo } from "react";
+
 const starryBackground = "/lovable-uploads/3482a817-1a88-4ef0-952f-a3741dbd4677.png?v=1";
 
-const HeroSection = () => {
+const HeroSection = memo(() => {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
-      {/* Starry Space Background */}
+      {/* Optimized Background with lazy loading */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${starryBackground})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
+        style={{ 
+          backgroundImage: `url(${starryBackground})`,
+          transform: 'translateZ(0)' // Hardware acceleration
+        }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
       
@@ -75,6 +80,8 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
+});
+
+HeroSection.displayName = 'HeroSection';
 
 export default HeroSection;

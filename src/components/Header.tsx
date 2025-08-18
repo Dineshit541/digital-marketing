@@ -1,17 +1,17 @@
-import { useState } from "react";
+import { useState, memo, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const Header = () => {
+const Header = memo(() => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navigation = [
+  const navigation = useMemo(() => [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/#services" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/#contact" },
-  ];
+  ], []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10">
@@ -64,6 +64,8 @@ const Header = () => {
       </div>
     </header>
   );
-};
+});
+
+Header.displayName = 'Header';
 
 export default Header;
