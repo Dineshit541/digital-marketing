@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import starryBackground from "@/assets/starry-background.png";
+const starryBackground = "/lovable-uploads/3482a817-1a88-4ef0-952f-a3741dbd4677.png?v=1";
 
 const HeroSection = () => {
   return (
