@@ -197,7 +197,12 @@
   }
 
   .text-glow-blue {
-    text-shadow: 0 0 20px #3B82F6, 0 0 40px #3B82F6, 0 0 60px #3B82F6;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    box-shadow: var(--shadow-glow);
+    filter: drop-shadow(0 0 20px hsl(280 100% 70% / 0.5));
   }
   
   .stats-number {
