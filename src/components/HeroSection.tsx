@@ -1,24 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { memo } from "react";
-import heroVideo from "@/assets/hero-video.mp4";
+
+const starryBackground = "/lovable-uploads/3482a817-1a88-4ef0-952f-a3741dbd4677.png?v=1";
 
 const HeroSection = memo(() => {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
-      {/* Video Background */}
-      <video 
-        className="absolute inset-0 w-full h-full object-cover will-change-transform"
-        autoPlay 
-        muted 
-        loop 
-        playsInline
-        preload="metadata"
-        style={{ transform: 'translateZ(0)' }}
-      >
-        <source src={heroVideo} type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40" />
+      {/* Optimized Background with lazy loading */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
+        style={{ 
+          backgroundImage: `url(${starryBackground})`,
+          transform: 'translateZ(0)' // Hardware acceleration
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
       
       {/* Glassmorphism Overlay */}
       <div className="absolute inset-0 backdrop-blur-sm bg-black/10" />
