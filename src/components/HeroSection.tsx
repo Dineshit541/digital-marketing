@@ -17,7 +17,7 @@ const HeroSection = memo(() => {
               <h1 className="hero-title mb-8">
                 Where AI Meets
                 <br />
-                <span className="hero-gradient-text text-glow-blue">
+                <span className="hero-gradient-text">
                   Digital Brilliance
                 </span>
               </h1>
