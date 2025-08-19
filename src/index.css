@@ -195,6 +195,10 @@
     background-clip: text;
     font-weight: 800;
   }
+
+  .text-glow-blue {
+    text-shadow: 0 0 20px #3B82F6, 0 0 40px #3B82F6, 0 0 60px #3B82F6;
+  }
   
   .stats-number {
     @apply font-bold;
