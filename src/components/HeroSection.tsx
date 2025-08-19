@@ -6,7 +6,11 @@ const starryBackground = "/lovable-uploads/3482a817-1a88-4ef0-952f-a3741dbd4677.
 
 const HeroSection = memo(() => {
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden">
+    <section 
+      id="home" 
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #0A0A1F, #1A1A40, #3B82F6)' }}
+    >
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col justify-center pt-16">
